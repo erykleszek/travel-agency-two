@@ -1,2 +1,2 @@
 # travel-agency-two
-Our official first project 
+Our first official project 
