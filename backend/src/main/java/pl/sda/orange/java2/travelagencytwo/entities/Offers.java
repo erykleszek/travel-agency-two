@@ -1,4 +1,4 @@
-package pl.sda.orange.java2.entities;
+package pl.sda.orange.java2.travelagencytwo.entities;
 
 import lombok.Data;
 
