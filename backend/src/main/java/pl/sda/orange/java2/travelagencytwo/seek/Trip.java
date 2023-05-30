@@ -26,4 +26,8 @@ public class Trip {
 
     @Column(name = "type")
     private String type;
+
+    @Column(name = "hotel_standard;")
+    private String hotelStandard;
+
 }
