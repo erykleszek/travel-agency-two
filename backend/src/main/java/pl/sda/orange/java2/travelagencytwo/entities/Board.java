@@ -11,17 +11,21 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name= "hotel")
-public class Hotel {
+@Table(name= "board")
+public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
-    String hotelName;
-    //refactor that name
-    int numbersOfStars;
+    private enum Type {
+        BED_AND_BREAKFAST,
+        HALF_BORD,
+        ALL_INCLUSIVE,
+        OVERNIGHT,
+        SELF_CATERING,
+        PROGRAM_PACKAGE,
+        MEALS_PROPER_TO_HOTEL_PROGRAM_OR_EVENT_DESCRIPTION
+    }
 
-    @OneToOne(cascade = CascadeType.ALL)
-    Address address;
 
     @OneToMany(cascade = CascadeType.ALL)
     List<Offers> offersList;

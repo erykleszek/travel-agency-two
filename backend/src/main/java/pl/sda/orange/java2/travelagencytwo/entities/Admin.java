@@ -1,14 +1,14 @@
 package pl.sda.orange.java2.travelagencytwo.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+
+@Table(name= "admin")
 public class Admin {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     String firstName;
     String lastName;
