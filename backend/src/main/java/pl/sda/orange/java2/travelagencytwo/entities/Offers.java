@@ -15,6 +15,7 @@ public class Offers {
     private long id;
 
     private String country;
+
     private enum Type {
         ALLINCLUSIVE,
         CITYBREAK,

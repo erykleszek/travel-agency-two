@@ -12,6 +12,6 @@ public class Admin {
     private long id;
     String firstName;
     String lastName;
-    String userName;
+    String adminName;
 
 }

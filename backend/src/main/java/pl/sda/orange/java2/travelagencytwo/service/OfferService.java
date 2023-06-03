@@ -1,12 +1,12 @@
-package pl.sda.orange.java2.travelagencytwo.offer;
+package pl.sda.orange.java2.travelagencytwo.service;
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
+import pl.sda.orange.java2.travelagencytwo.entities.Offer;
 
 import java.time.LocalDate;
 import java.util.List;
 
-import static pl.sda.orange.java2.travelagencytwo.offer.TypesOfOffer.TOUR;
+import static pl.sda.orange.java2.travelagencytwo.entities.TypesOfOffer.TOUR;
 @Service
 public class OfferService {
 
