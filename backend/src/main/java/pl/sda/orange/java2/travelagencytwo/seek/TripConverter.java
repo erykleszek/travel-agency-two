@@ -1,6 +1,7 @@
 package pl.sda.orange.java2.travelagencytwo.seek;
 
 import org.springframework.stereotype.Component;
+import pl.sda.orange.java2.travelagencytwo.entities.Trip;
 
 @Component
 public class TripConverter {
