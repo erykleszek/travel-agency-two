@@ -26,7 +26,7 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
             generator = "sequence"
     )
-    private long id;
+    private long identifier;
     private String firstName;
     private String lastName;
     private String email;
