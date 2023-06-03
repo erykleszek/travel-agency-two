@@ -1,4 +1,4 @@
-package pl.sda.orange.java2.travelagencytwo.user.token;
+package pl.sda.orange.java2.travelagencytwo.token;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

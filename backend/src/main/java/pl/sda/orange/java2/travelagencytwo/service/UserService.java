@@ -1,4 +1,4 @@
-package pl.sda.orange.java2.travelagencytwo.user;
+package pl.sda.orange.java2.travelagencytwo.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,9 +6,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.yaml.snakeyaml.nodes.CollectionNode;
-import pl.sda.orange.java2.travelagencytwo.user.token.ConfirmationToken;
-import pl.sda.orange.java2.travelagencytwo.user.token.ConfirmationTokenService;
+import pl.sda.orange.java2.travelagencytwo.entities.User;
+import pl.sda.orange.java2.travelagencytwo.repository.UserRepository;
+import pl.sda.orange.java2.travelagencytwo.token.ConfirmationToken;
+import pl.sda.orange.java2.travelagencytwo.token.ConfirmationTokenService;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

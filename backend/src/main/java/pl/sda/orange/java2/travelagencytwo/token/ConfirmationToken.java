@@ -1,10 +1,10 @@
-package pl.sda.orange.java2.travelagencytwo.user.token;
+package pl.sda.orange.java2.travelagencytwo.token;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import pl.sda.orange.java2.travelagencytwo.user.User;
+import pl.sda.orange.java2.travelagencytwo.entities.User;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

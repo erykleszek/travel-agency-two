@@ -1,10 +1,11 @@
-package pl.sda.orange.java2.travelagencytwo.registration;
+package pl.sda.orange.java2.travelagencytwo.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import pl.sda.orange.java2.travelagencytwo.user.User;
-import pl.sda.orange.java2.travelagencytwo.user.UserRole;
-import pl.sda.orange.java2.travelagencytwo.user.UserService;
+import pl.sda.orange.java2.travelagencytwo.registration.EmailValidator;
+import pl.sda.orange.java2.travelagencytwo.registration.RegistrationRequest;
+import pl.sda.orange.java2.travelagencytwo.entities.User;
+import pl.sda.orange.java2.travelagencytwo.entities.UserRole;
 
 @Service
 @AllArgsConstructor

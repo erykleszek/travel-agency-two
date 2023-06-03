@@ -1,4 +1,4 @@
-package pl.sda.orange.java2.travelagencytwo.offer;
+package pl.sda.orange.java2.travelagencytwo.entities;
 
 public enum TypesOfOffer {
     ALL_INCLUSIVE,

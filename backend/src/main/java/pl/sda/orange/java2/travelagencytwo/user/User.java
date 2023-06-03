@@ -69,7 +69,7 @@ public class User implements UserDetails {
         return lastName;
     }
     public String getFirstName() {
-        return firstName;
+        return lastName;
     }
 
     @Override
