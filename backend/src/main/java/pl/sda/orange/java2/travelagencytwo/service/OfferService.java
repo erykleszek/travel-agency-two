@@ -23,4 +23,7 @@ public List<Offer> getOffer(){
                 )
         );
     }
+
+    public void addOffer(Offer offer) {
+    }
 }
