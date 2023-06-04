@@ -30,4 +30,16 @@ public class Trip {
     @Column(name = "hotel_standard")
     private String hotelStandard;
 
+    public Trip(String departureCity, String destinationCity, LocalDate departureDate, LocalDate returnDate, String type, String hotelStandard) {
+        this.departureCity = departureCity;
+        this.destinationCity = destinationCity;
+        this.departureDate = departureDate;
+        this.returnDate = returnDate;
+        this.type = type;
+        this.hotelStandard = hotelStandard;
+    }
+
+    public Trip() {
+        //dla hibernate
+    }
 }

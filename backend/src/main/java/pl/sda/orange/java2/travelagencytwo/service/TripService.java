@@ -19,4 +19,8 @@ public class TripService {
         return tripRepository.findByDepartureCityAndDestinationCityAndDepartureDateBetweenAndReturnDateBetweenAndTypeAndHotelStandard(
                 departureCity, destinationCity, departureDateStart, departureDateEnd, returnDateStart, returnDateEnd,
                 type, hotelStandard);
-    }}
+    }
+
+    public void addTrip(Trip trip) {
+    }
+}
