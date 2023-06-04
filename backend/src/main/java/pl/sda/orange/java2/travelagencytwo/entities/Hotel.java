@@ -18,11 +18,11 @@ public class Hotel {
     long id;
     String hotelName;
     //refactor that name
-    int numbersOfStars;
+    int hotelStandard;
 
     @OneToOne(cascade = CascadeType.ALL)
     Address address;
 
     @OneToMany(cascade = CascadeType.ALL)
-    List<Offers> offersList;
+    List<Offer> offersList;
 }

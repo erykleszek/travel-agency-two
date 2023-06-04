@@ -4,14 +4,19 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 @AllArgsConstructor
 @Getter
 @ToString
+@Entity
+
 public class Offer {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String country;
@@ -28,5 +33,11 @@ public class Offer {
         this.description = description;
         this.startDate = startDate;
         this.endDate = endDate;
+    }
+
+    public void add(Offer offer) {
+    }
+
+    public void remove(Offer offer) {
     }
 }
