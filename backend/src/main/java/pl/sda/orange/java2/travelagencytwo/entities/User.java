@@ -17,6 +17,7 @@ import java.util.Collections;
 @EqualsAndHashCode
 @NoArgsConstructor
 @Entity
+@Table(name="\"User\"")
 public class User implements UserDetails {
     @Id
     @SequenceGenerator(name = "sequence",
@@ -26,7 +27,7 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
             generator = "sequence"
     )
-    private long id;
+    private long identifier;
     private String firstName;
     private String lastName;
     private String email;
