@@ -28,5 +28,5 @@ public class Board {
 
 
     @OneToMany(cascade = CascadeType.ALL)
-    List<Offers> offersList;
+    List<Offer> offersList;
 }

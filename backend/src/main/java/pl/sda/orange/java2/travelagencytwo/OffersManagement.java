@@ -1,30 +1,30 @@
 package pl.sda.orange.java2.travelagencytwo;
 
-import pl.sda.orange.java2.travelagencytwo.entities.Offers;
+import pl.sda.orange.java2.travelagencytwo.entities.Offer;
 
 import java.util.ArrayList;
 import  java.util.List;
 
 public class OffersManagement {
-    private List<Offers> offers;
+    private final List<Offer> offer;
 
     public OffersManagement() {
-        this.offers = new ArrayList<>();
+        this.offer = new ArrayList<>();
 
     }
 
-    public void addOffer (Offers offer) {
-        offers.add(offer);
+    public void addOffer (Offer offer) {
+        offer.add(offer);
     }
 
-    public void removeOffer(Offers offer) {
-        offers.remove(offer);
+    public void removeOffer(Offer offer) {
+        offer.remove(offer);
     }
 
-    public void modifyOffer(Offers previousOffer, Offers newOffer) {
-        int index = offers.indexOf(previousOffer);
+    public void modifyOffer(Offer previousOffer, Offer newOffer) {
+        int index = offer.indexOf(previousOffer);
         if (index != -1) {
-            offers.set(index, newOffer);
+            offer.set(index, newOffer);
         }
 
     }
