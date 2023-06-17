@@ -16,6 +16,7 @@ public class Airport {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
+    String name;
 
     @OneToOne(cascade = CascadeType.ALL)
     Address address;
