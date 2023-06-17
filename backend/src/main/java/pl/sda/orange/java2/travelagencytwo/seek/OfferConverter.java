@@ -1,13 +1,13 @@
 package pl.sda.orange.java2.travelagencytwo.seek;
 
 import org.springframework.stereotype.Component;
-import pl.sda.orange.java2.travelagencytwo.entities.Trip;
+import pl.sda.orange.java2.travelagencytwo.entities.Offer;
 
 @Component
-public class TripConverter {
+public class OfferConverter {
 
-    public TripDTO map(Trip entity) {
-        var dto = new TripDTO();
+    public OfferDTO map(Offer entity) {
+        var dto = new OfferDTO();
         dto.setId(entity.getId());
         dto.setDepartureCity(entity.getDepartureCity());
         dto.setDestinationCity(entity.getDestinationCity());

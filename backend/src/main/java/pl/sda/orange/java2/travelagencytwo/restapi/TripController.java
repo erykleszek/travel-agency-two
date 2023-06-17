@@ -6,8 +6,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import pl.sda.orange.java2.travelagencytwo.entities.Trip;
-import pl.sda.orange.java2.travelagencytwo.service.TripService;
+import pl.sda.orange.java2.travelagencytwo.entities.Offer;
+import pl.sda.orange.java2.travelagencytwo.service.OfferService;
+
 
 import java.time.LocalDate;
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
 @Controller
 public class TripController {
     @Autowired
-    private TripService tripService;
+    private OfferService tripService;
 
     @GetMapping("/trips/search")
     public String searchTrips(@RequestParam("departureCity") String departureCity,
@@ -26,7 +27,7 @@ public class TripController {
                               @RequestParam("returnDateEnd") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate returnDateEnd,
                               @RequestParam("type") String type, @RequestParam("hotelStandard") String hotelStandard,
                               Model model) {
-        List<Trip> trips = tripService.searchTrips(departureCity, destinationCity, departureDateStart, departureDateEnd,
+        List<Offer> trips = tripService.searchTrips(departureCity, destinationCity, departureDateStart, departureDateEnd,
                 returnDateStart, returnDateEnd, type, hotelStandard);
         model.addAttribute("trips", trips);
         return "tripResults";

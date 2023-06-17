@@ -40,4 +40,28 @@ public class Offer {
 
     public void remove(Offer offer) {
     }
+
+    public String getDepartureCity() {
+        return null;
+    }
+
+    public String getDestinationCity() {
+        return null;
+    }
+
+    public LocalDate getDepartureDate() {
+        return null;
+    }
+
+    public LocalDate getReturnDate() {
+        return null;
+    }
+
+    public String getType() {
+        return null;
+    }
+
+    public String getHotelStandard() {
+        return null;
+    }
 }

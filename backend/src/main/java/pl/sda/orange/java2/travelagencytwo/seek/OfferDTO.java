@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 @Data
 
-public class TripDTO {
+public class OfferDTO {
 
     private Long id;
 

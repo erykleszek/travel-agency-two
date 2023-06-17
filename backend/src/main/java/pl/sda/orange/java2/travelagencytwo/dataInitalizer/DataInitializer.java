@@ -5,10 +5,10 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import pl.sda.orange.java2.travelagencytwo.entities.Offer;
-import pl.sda.orange.java2.travelagencytwo.entities.Trip;
+//import pl.sda.orange.java2.travelagencytwo.entities.Offer;
+
 import pl.sda.orange.java2.travelagencytwo.service.OfferService;
-import pl.sda.orange.java2.travelagencytwo.service.TripService;
+
 
 import java.time.LocalDate;
 
@@ -18,24 +18,27 @@ import java.time.LocalDate;
 public class DataInitializer {
 
    private final OfferService offerService;
-   private final TripService tripService;
+   private final OfferService tripService;
 
    @EventListener(ApplicationReadyEvent.class)
    public void initData(){
 // initOffers();
-initTrips();
+initOffers();
 
    }
 
-    private void initTrips() {
-       Trip trip = new Trip("Warsaw", "Alanya", LocalDate.of(2023,7,15), LocalDate.of(2023,7,23), "jakaś", "5gwiazdek");
-       Trip trip2 = new Trip("Wroclaw", "Madrit", LocalDate.of(2023,9,1), LocalDate.of(2023,8,15), "xx", "4*");
-       Trip trip3 = new Trip("Kraków", "Hurghada", LocalDate.of(2023,9,1), LocalDate.of(2023, 9,23), "xx", "4*");
-
-   tripService.addTrip(trip);
-   tripService.addTrip(trip2);
-   tripService.addTrip(trip3);
+   private void initOffers() {
    }
+
+//    private void initTrips() {
+//       Offer trip = new Offer("Warsaw", "Alanya", LocalDate.of(2023,7,15), LocalDate.of(2023,7,23), "jakaś", "5gwiazdek");
+//       Offer trip2 = new Offer("Wroclaw", "Madrit", LocalDate.of(2023,9,1), LocalDate.of(2023,8,15), "xx", "4*");
+//       Offer trip3 = new Offer("Kraków", "Hurghada", LocalDate.of(2023,9,1), LocalDate.of(2023, 9,23), "xx", "4*");
+//
+//   tripService.addOffer(trip);
+//   tripService.addOffer(trip2);
+//   tripService.addOffer(trip3);
+//   }
 
 //    public void initOffers() {
 //
@@ -46,4 +49,4 @@ initTrips();
 //       offerService.addOffer(offer2);
     }
 
-}
+
