@@ -28,13 +28,21 @@ initTrips();
    }
 
     private void initTrips() {
-       Trip trip = new Trip("Warsaw", "Alanya", LocalDate.of(2023,7,15), LocalDate.of(2023,7,23), "jakaś", "5gwiazdek");
-       Trip trip2 = new Trip("Wroclaw", "Madrit", LocalDate.of(2023,9,1), LocalDate.of(2023,8,15), "xx", "4*");
-       Trip trip3 = new Trip("Kraków", "Hurghada", LocalDate.of(2023,9,1), LocalDate.of(2023, 9,23), "xx", "4*");
+       Trip trip = new Trip("Warszawa", "Alanya", LocalDate.of(2023,7,15), LocalDate.of(2023,7,23), "Summer Paradise", "*****");
+       Trip trip2 = new Trip("Wrocław", "Madrit", LocalDate.of(2023,9,1), LocalDate.of(2023,8,15), "Hola Hola!", "****");
+       Trip trip3 = new Trip("Kraków", "Hurghada", LocalDate.of(2023,9,1), LocalDate.of(2023, 9,23), "Kleopatra vibe", "****");
+       Trip trip4 = new Trip("Radom", "Barcelona", LocalDate.of(2023,8,5), LocalDate.of(2023, 8,13), "Oliwki, sangria i churros", "**");
+       Trip trip5 = new Trip("Kraków", "Słoneczny Brzeg", LocalDate.of(2023,9,1), LocalDate.of(2023, 9,23), "Chwila zapomnienia", "****");
+       Trip trip6 = new Trip("Warszawa", "Ateny", LocalDate.of(2023,8,15), LocalDate.of(2023, 8,23), "Dotyk przeszłości", "****");
+       Trip trip7 = new Trip("Wrocław", "Antalya", LocalDate.of(2023,7,7), LocalDate.of(2023, 7,18), "Luksus pod palmami", "*****");
 
    tripService.addTrip(trip);
    tripService.addTrip(trip2);
    tripService.addTrip(trip3);
+   tripService.addTrip(trip4);
+   tripService.addTrip(trip5);
+   tripService.addTrip(trip6);
+   tripService.addTrip(trip7);
    }
 
 //    public void initOffers() {
