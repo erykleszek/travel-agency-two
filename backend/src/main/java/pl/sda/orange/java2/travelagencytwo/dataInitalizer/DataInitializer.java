@@ -54,4 +54,4 @@ initTrips();
 //       offerService.addOffer(offer2);
     }
 
-}
+
